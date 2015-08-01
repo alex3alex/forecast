@@ -1,4 +1,13 @@
+<button {{action "fetchForecast"}}>Get me a random forecast</button>
+
 <ul>
-  <li>{{model.latitude}}</li>
-  <li>{{model.longitude}}</li>
+  <li>Gist: It's currently {{model.summary}}</li>
+  <li>Latitude: {{model.latitude}}</li>
+  <li>Longitude: {{model.longitude}}</li>
+  <li>Timezone: {{model.timezone}}</li>
+  <li>Temperature: {{model.temperature}}</li>
+  <li>Feels Like: {{model.apparentTemperature}}</li>
+  <li>Humidity: {{model.humidity}}</li>
+  <li>Current Precipitation: {{model.precipIntensity}}</li>
+  <li>Chance of Precipitation: {{model.precipProbability}}</li>
 </ul>
